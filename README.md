@@ -12,7 +12,7 @@ openapi-generator generate -i https://raw.githubusercontent.com/github/rest-api-
 
 ### JavaScript generation
 
-openapi-generator generate -i https://raw.githubusercontent.com/github/rest-api-description/main/descriptions/api.github.com/dereferenced/api.github.com.deref.json -g javascript -o [OUTPUT_PATH]
+openapi-generator generate -i https://raw.githubusercontent.com/github/rest-api-description/main/descriptions/api.github.com/dereferenced/api.github.com.deref.json -g typescript-node -o [OUTPUT_PATH]
 
 
 ### Setup openapi-generator
