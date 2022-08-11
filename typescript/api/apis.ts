@@ -1,0 +1,82 @@
+export * from './actionsApi';
+import { ActionsApi } from './actionsApi';
+export * from './activityApi';
+import { ActivityApi } from './activityApi';
+export * from './appsApi';
+import { AppsApi } from './appsApi';
+export * from './billingApi';
+import { BillingApi } from './billingApi';
+export * from './checksApi';
+import { ChecksApi } from './checksApi';
+export * from './codeScanningApi';
+import { CodeScanningApi } from './codeScanningApi';
+export * from './codesOfConductApi';
+import { CodesOfConductApi } from './codesOfConductApi';
+export * from './codespacesApi';
+import { CodespacesApi } from './codespacesApi';
+export * from './dependabotApi';
+import { DependabotApi } from './dependabotApi';
+export * from './dependencyGraphApi';
+import { DependencyGraphApi } from './dependencyGraphApi';
+export * from './emojisApi';
+import { EmojisApi } from './emojisApi';
+export * from './enterpriseAdminApi';
+import { EnterpriseAdminApi } from './enterpriseAdminApi';
+export * from './gistsApi';
+import { GistsApi } from './gistsApi';
+export * from './gitApi';
+import { GitApi } from './gitApi';
+export * from './gitignoreApi';
+import { GitignoreApi } from './gitignoreApi';
+export * from './interactionsApi';
+import { InteractionsApi } from './interactionsApi';
+export * from './issuesApi';
+import { IssuesApi } from './issuesApi';
+export * from './licensesApi';
+import { LicensesApi } from './licensesApi';
+export * from './markdownApi';
+import { MarkdownApi } from './markdownApi';
+export * from './metaApi';
+import { MetaApi } from './metaApi';
+export * from './migrationsApi';
+import { MigrationsApi } from './migrationsApi';
+export * from './oidcApi';
+import { OidcApi } from './oidcApi';
+export * from './orgsApi';
+import { OrgsApi } from './orgsApi';
+export * from './packagesApi';
+import { PackagesApi } from './packagesApi';
+export * from './projectsApi';
+import { ProjectsApi } from './projectsApi';
+export * from './pullsApi';
+import { PullsApi } from './pullsApi';
+export * from './rateLimitApi';
+import { RateLimitApi } from './rateLimitApi';
+export * from './reactionsApi';
+import { ReactionsApi } from './reactionsApi';
+export * from './reposApi';
+import { ReposApi } from './reposApi';
+export * from './scimApi';
+import { ScimApi } from './scimApi';
+export * from './searchApi';
+import { SearchApi } from './searchApi';
+export * from './secretScanningApi';
+import { SecretScanningApi } from './secretScanningApi';
+export * from './serverStatisticsApi';
+import { ServerStatisticsApi } from './serverStatisticsApi';
+export * from './teamsApi';
+import { TeamsApi } from './teamsApi';
+export * from './usersApi';
+import { UsersApi } from './usersApi';
+import * as http from 'http';
+
+export class HttpError extends Error {
+    constructor (public response: http.IncomingMessage, public body: any, public statusCode?: number) {
+        super('HTTP request failed');
+        this.name = 'HttpError';
+    }
+}
+
+export { RequestFile } from '../model/models';
+
+export const APIS = [ActionsApi, ActivityApi, AppsApi, BillingApi, ChecksApi, CodeScanningApi, CodesOfConductApi, CodespacesApi, DependabotApi, DependencyGraphApi, EmojisApi, EnterpriseAdminApi, GistsApi, GitApi, GitignoreApi, InteractionsApi, IssuesApi, LicensesApi, MarkdownApi, MetaApi, MigrationsApi, OidcApi, OrgsApi, PackagesApi, ProjectsApi, PullsApi, RateLimitApi, ReactionsApi, ReposApi, ScimApi, SearchApi, SecretScanningApi, ServerStatisticsApi, TeamsApi, UsersApi];

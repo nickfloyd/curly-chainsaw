@@ -1,0 +1,11 @@
+# Org.OpenAPITools.Model.AnalysisDeletion
+
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**NextAnalysisUrl** | **string** | Next deletable analysis in chain, without last analysis deletion confirmation | [readonly] 
+**ConfirmDeleteUrl** | **string** | Next deletable analysis in chain, with last analysis deletion confirmation | [readonly] 
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+

@@ -1,0 +1,10 @@
+# Org.OpenAPITools.Model.ReposSetStatusCheckContextsRequestOneOf
+
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**Contexts** | **List<string>** | contexts parameter | 
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
